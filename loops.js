@@ -28,7 +28,7 @@ const createArray = (length) => {
 }
 
 const createData = () => {
-  const current = new Date()
+  const current = new Date()  //fixed data syntax
   current.setDate(1)
 
   const startDay = current.getDay()
@@ -37,7 +37,7 @@ const createData = () => {
   const weeks = createArray(5)
   const days = createArray(7)
 
-  let dayIndex = 0
+  let dayIndex = 0 //replaced result with day index
 
   for (let weekIndex = 0; weekIndex < weeks.length; weekIndex++) {
     const value = {
@@ -62,7 +62,7 @@ const createData = () => {
 
   return weeks
 }
-
+ console.log(createData())
 const addCell = (existing, classString, value) => {
   return /* html */ `
     <td class="${classString}">
